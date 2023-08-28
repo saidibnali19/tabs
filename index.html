@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Said Ali" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bg-primary text-secondary wrapper">
+    <main>
+      <article class="tabs flow" data-tabs>
+        <ul class="flow" aria-label="How can our company help you?">
+          <li>
+            <a class="tabs__button | bg-accent" id="tab-1" href="#advertising"
+              >Advertising</a
+            >
+          </li>
+          <li>
+            <a class="tabs__button | bg-accent" id="tab-2" href="#socials"
+              >Socials</a
+            >
+          </li>
+          <li>
+            <a class="tabs__button | bg-accent" id="tab-3" href="#marketing"
+              >Marketing</a
+            >
+          </li>
+          <li>
+            <a class="tabs__button | bg-accent" id="tab-4" href="#email"
+              >Email</a
+            >
+          </li>
+        </ul>
+
+        <div id="focus-hint" hidden>Press tab to move to the tabpanel</div>
+
+        <div class="tabs__panels flow">
+          <div id="advertising" aria-labelledby="tab-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus fugiat quas in voluptate ducimus magni adipisci
+              facere expedita molestias est omnis, fuga delectus, ipsa officiis
+              repellendus facilis neque accusamus? Consequuntur tempora labore
+              laboriosam minus id.
+            </p>
+          </div>
+          <div id="socials" aria-labelledby="tab-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              voluptatibus accusamus nemo maiores dicta minima praesentium, quos
+              nihil enim doloribus dolorem dolorum eveniet, repudiandae cumque
+              repellat, adipisci accusantium quibusdam magnam? Quas sapiente
+              animi vel suscipit?
+            </p>
+          </div>
+          <div id="marketing" aria-labelledby="tab-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              quos, recusandae quis eligendi velit repudiandae optio reiciendis
+              rerum quisquam quibusdam itaque ad rem a non modi tempore
+              expedita. Aspernatur ipsam amet consequatur nulla architecto ab.
+            </p>
+          </div>
+          <div id="email" aria-labelledby="" tab-3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptates nesciunt quidem commodi animi, vel eligendi in
+              voluptate ea mollitia placeat, vero corporis veritatis et enim
+              quisquam minus dolores maiores architecto, distinctio maxime
+              tempore voluptatem reiciendis?
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

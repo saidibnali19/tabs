@@ -1,0 +1,74 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  min-height: 300vh;
+  min-height: 300dvh;
+}
+
+:root {
+  --clr-primary: 0 0% 0%; /* black */
+  --clr-secondary: 0 100% 100%; /* white */
+  --clr-accent: 330 100% 71%; /* hotpink */
+}
+
+/* Utility classes */
+/* Typography */
+.text-secondary {
+  color: hsl(var(--clr-secondary));
+}
+
+.bg-primary {
+  background-color: hsl(var(--clr-primary));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+}
+
+/* Layout */
+.wrapper {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1rem);
+}
+
+/* Components */
+.tabs ul {
+  --flow-space: 0.5rem;
+}
+
+.tabs ul li:first-child {
+  margin-block-start: var(--flow-space, 1rem);
+}
+
+.tabs__button {
+  padding: 0.5rem 1.25rem;
+  display: inline-block;
+}
+
+[role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+}
+
+[aria-selected="true"] {
+  color: hsl(var(--clr-primary));
+}
